@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보 처리방침 - Zombie Defense</title>
+  <meta name="description" content="Zombie Defense 게임의 개인정보 처리방침입니다.">
+  <style>
+    :root {
+      --primary-color: #1a1a2e;
+      --accent-color: #e94560;
+      --text-color: #333;
+      --text-light: #666;
+      --bg-color: #ffffff;
+      --border-color: #e0e0e0;
+      --section-bg: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+      line-height: 1.8;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+    }
+
+    /* Header */
+    .header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .logo:hover {
+      color: var(--accent-color);
+    }
+
+    .back-link {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* Title Section */
+    .title-section {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .title-section h1 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .title-section .game-name {
+      color: var(--accent-color);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .effective-date {
+      display: inline-block;
+      background: var(--section-bg);
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    .intro-text {
+      margin-top: 1.5rem;
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      color: var(--text-color);
+      margin: 1.5rem 0 0.75rem;
+      padding-left: 0.75rem;
+      border-left: 3px solid var(--accent-color);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var(--text-light);
+    }
+
+    /* Info Box */
+    .info-box {
+      background: var(--section-bg);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .info-box p {
+      margin-bottom: 0.5rem;
+    }
+
+    .info-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Tables */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 400px;
+    }
+
+    th,
+    td {
+      padding: 0.875rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      background: var(--primary-color);
+      color: #fff;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    td {
+      background: #fff;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: var(--section-bg);
+    }
+
+    /* Links */
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #c73850;
+      text-decoration: underline;
+    }
+
+    /* External Links */
+    .external-links {
+      margin: 1rem 0;
+    }
+
+    .external-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .external-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .external-links a::after {
+      content: "↗";
+      font-size: 0.8rem;
+    }
+
+    /* User Rights Section */
+    .rights-item {
+      background: var(--section-bg);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    .rights-item strong {
+      color: var(--primary-color);
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .rights-item ul {
+      margin: 0;
+    }
+
+    .rights-item li {
+      padding: 0.25rem 0;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      background: linear-gradient(135deg, var(--primary-color) 0%, #16213e 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      color: #fff;
+      border-bottom-color: var(--accent-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info a {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .contact-info a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--primary-color);
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0 1rem;
+    }
+
+    .footer a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem 1rem 3rem;
+      }
+
+      .title-section h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      th,
+      td {
+        padding: 0.75rem 0.625rem;
+        font-size: 0.9rem;
+      }
+
+      .contact-info {
+        padding: 1.5rem;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      .header,
+      .footer,
+      .back-link {
+        display: none;
+      }
+
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      body {
+        font-size: 12pt;
+        line-height: 1.6;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/" class="logo">Zombie Defense</a>
+      <a href="/" class="back-link">← 홈으로</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="title-section">
+      <p class="game-name">🎮 Zombie Defense</p>
+      <h1>개인정보 처리방침</h1>
+      <span class="effective-date">📅 시행일: 2025년 12월 1일</span>
+      <p class="intro-text">
+        고순이(이하 "회사")는 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고 
+        이와 관련한 고충을 신속하게 처리하기 위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.
+      </p>
+    </div>
+
+    <section>
+      <h2>1. 수집하는 개인정보 항목</h2>
+      <div class="info-box">
+        <p><strong>📱 로컬 저장 방식</strong></p>
+        <p>본 게임은 서버를 운영하지 않으며, 게임 데이터는 사용자 기기에 로컬 저장됩니다.</p>
+      </div>
+      <p>단, 아래 제3자 서비스를 통해 다음 정보가 수집될 수 있습니다:</p>
+
+      <h3>광고 서비스 (Unity Ads)</h3>
+      <ul>
+        <li>기기 정보 (모델명, OS 버전)</li>
+        <li>광고 식별자 (GAID/IDFA)</li>
+        <li>IP 주소 (대략적 위치 추정용)</li>
+        <li>광고 시청 기록</li>
+      </ul>
+
+      <h3>분석 서비스 (Firebase Analytics)</h3>
+      <ul>
+        <li>기기 정보 (모델명, OS 버전)</li>
+        <li>앱 사용 통계 (세션, 이벤트)</li>
+        <li>대략적 위치 (IP 기반)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. 개인정보 수집 목적</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>서비스</th>
+              <th>목적</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unity Ads</td>
+              <td>무료 게임 제공을 위한 광고 수익</td>
+            </tr>
+            <tr>
+              <td>Firebase Analytics</td>
+              <td>서비스 개선 및 통계 분석</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. 개인정보 보유 및 이용 기간</h2>
+      <div class="info-box">
+        <p>회사는 직접 개인정보를 저장하지 않습니다.</p>
+      </div>
+      <p>제3자 서비스의 보유 기간은 각 서비스의 정책을 따릅니다:</p>
+      <ul class="external-links">
+        <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity 개인정보 처리방침</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google/Firebase 개인정보 처리방침</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 개인정보의 제3자 제공</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>제공받는 자</th>
+              <th>제공 항목</th>
+              <th>제공 목적</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unity Technologies</td>
+              <td>기기정보, 광고ID, IP</td>
+              <td>광고 제공</td>
+            </tr>
+            <tr>
+              <td>Google (Firebase)</td>
+              <td>기기정보, 앱 사용통계</td>
+              <td>서비스 분석</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. 이용자의 권리</h2>
+      <div class="rights-item">
+        <strong>🚫 광고 개인화 거부</strong>
+        <p>기기 설정에서 광고 ID 재설정 또는 추적 거부가 가능합니다:</p>
+        <ul>
+          <li><strong>Android:</strong> 설정 → Google → 광고 → 광고 ID 삭제</li>
+          <li><strong>iOS:</strong> 설정 → 개인정보 보호 → 추적 → 앱 추적 허용 끄기</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <h2>6. 개인정보 보호책임자</h2>
+      <p><strong>담당자:</strong> 고순이</p>
+      <p><strong>이메일:</strong> <a href="mailto:gosuni2025@gmail.com">gosuni2025@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>7. 개인정보 처리방침 변경</h2>
+      <div class="info-box">
+        <p>본 방침은 시행일로부터 적용되며, 변경 시 앱 내 공지 또는 홈페이지를 통해 안내합니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Zombie Defense Team. All rights reserved.</p>
+    <div>
+      <a href="/">홈</a>
+      <a href="/privacy.html">개인정보 처리방침</a>
+    </div>
+  </footer>
+</body>
+
+</html>
