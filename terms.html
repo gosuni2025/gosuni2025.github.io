@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CZREXB000"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1CZREXB000');
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서비스 이용약관 - Zombie Defense</title>
+  <meta name="description" content="Zombie Defense 게임의 서비스 이용약관입니다.">
+  <style>
+    :root {
+      --primary-color: #1a1a2e;
+      --accent-color: #e94560;
+      --text-color: #333;
+      --text-light: #666;
+      --bg-color: #ffffff;
+      --border-color: #e0e0e0;
+      --section-bg: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+      line-height: 1.8;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+    }
+
+    /* Header */
+    .header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .logo:hover {
+      color: var(--accent-color);
+    }
+
+    .back-link {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* Title Section */
+    .title-section {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .title-section h1 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .title-section .game-name {
+      color: var(--accent-color);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .effective-date {
+      display: inline-block;
+      background: var(--section-bg);
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    .intro-text {
+      margin-top: 1.5rem;
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      color: var(--text-color);
+      margin: 1.5rem 0 0.75rem;
+      padding-left: 0.75rem;
+      border-left: 3px solid var(--accent-color);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    ul, ol {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var(--text-light);
+    }
+
+    /* Info Box */
+    .info-box {
+      background: var(--section-bg);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .info-box p {
+      margin-bottom: 0.5rem;
+    }
+
+    .info-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Warning Box */
+    .warning-box {
+      background: #fff3f3;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+      border-left: 4px solid #e94560;
+    }
+
+    .warning-box p {
+      margin-bottom: 0.5rem;
+      color: #c73850;
+    }
+
+    .warning-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Links */
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #c73850;
+      text-decoration: underline;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      background: linear-gradient(135deg, var(--primary-color) 0%, #16213e 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      color: #fff;
+      border-bottom-color: var(--accent-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info a {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .contact-info a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Zombie Icon Decoration */
+    .zombie-icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    /* Service List */
+    .service-list {
+      background: var(--section-bg);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .service-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .service-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--primary-color);
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0 1rem;
+    }
+
+    .footer a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem 1rem 3rem;
+      }
+
+      .title-section h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      .contact-info {
+        padding: 1.5rem;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      .header,
+      .footer,
+      .back-link {
+        display: none;
+      }
+
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      body {
+        font-size: 12pt;
+        line-height: 1.6;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/" class="logo">🧟 Zombie Defense</a>
+      <a href="/" class="back-link">← 홈으로</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="title-section">
+      <p class="game-name">🎮 Zombie Defense</p>
+      <h1>서비스 이용약관</h1>
+      <span class="effective-date">📅 시행일: 2025년 12월 4일</span>
+      <p class="intro-text">
+        본 약관은 고순이(이하 "회사")가 제공하는 모바일 게임 "좀비 디펜스"(이하 "서비스")의 이용과 관련하여 
+        회사와 이용자 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
+      </p>
+    </div>
+
+    <section>
+      <h2>제1조 (목적)</h2>
+      <div class="info-box">
+        <p><span class="zombie-icon">🎯</span>본 약관은 회사가 제공하는 모바일 게임 "좀비 디펜스" 서비스의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>제2조 (용어의 정의)</h2>
+      <ol>
+        <li><strong>"서비스"</strong>란 회사가 제공하는 게임 및 이와 관련된 모든 서비스를 의미합니다.</li>
+        <li><strong>"이용자"</strong>란 본 약관에 동의하고 서비스를 이용하는 자를 의미합니다.</li>
+        <li><strong>"게임 데이터"</strong>란 서비스 이용 과정에서 생성되는 캐릭터, 아이템, 게임머니 등의 정보를 의미합니다.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>제3조 (약관의 효력 및 변경)</h2>
+      <ol>
+        <li>본 약관은 서비스를 이용하고자 하는 모든 이용자에게 적용됩니다.</li>
+        <li>회사는 필요한 경우 관련 법령을 위배하지 않는 범위에서 본 약관을 변경할 수 있습니다.</li>
+        <li>약관이 변경되는 경우 회사는 변경 내용을 서비스 내 공지사항을 통해 고지합니다.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>제4조 (서비스의 제공)</h2>
+      <p>회사는 다음과 같은 서비스를 제공합니다:</p>
+      <ul class="service-list">
+        <li><span class="zombie-icon">🧟</span>좀비 디펜스 게임 플레이</li>
+        <li><span class="zombie-icon">🎁</span>게임 내 보상 시스템</li>
+        <li><span class="zombie-icon">📺</span>광고 시청을 통한 보상 획득</li>
+      </ul>
+      <div class="info-box">
+        <p><strong>📱 네트워크 안내</strong></p>
+        <p>광고 등 일부 기능은 네트워크 연결이 필요할 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>제5조 (이용자의 의무)</h2>
+      <p>이용자는 다음 행위를 하여서는 안 됩니다:</p>
+      <div class="warning-box">
+        <p><strong>⚠️ 금지 행위</strong></p>
+      </div>
+      <ol>
+        <li>서비스 운영을 방해하는 행위</li>
+        <li>버그 악용, 해킹, 프로그램 변조 등 비정상적인 방법으로 서비스를 이용하는 행위</li>
+        <li>타인의 개인정보를 침해하거나 도용하는 행위</li>
+        <li>회사의 지식재산권을 침해하는 행위</li>
+        <li>기타 관련 법령에 위배되는 행위</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>제6조 (서비스 이용 제한)</h2>
+      <div class="warning-box">
+        <p>회사는 이용자가 제5조의 의무를 위반한 경우 서비스 이용을 제한하거나 이용 계약을 해지할 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>제7조 (광고)</h2>
+      <ol>
+        <li>회사는 서비스 운영과 관련하여 광고를 게재할 수 있습니다.</li>
+        <li>이용자는 광고 시청을 통해 게임 내 보상을 획득할 수 있습니다.</li>
+        <li>광고 시청은 이용자의 선택에 따르며, 필수 사항이 아닙니다.</li>
+      </ol>
+      <div class="info-box">
+        <p><span class="zombie-icon">💡</span>광고를 시청하면 게임 내에서 유용한 보상을 받을 수 있습니다!</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>제8조 (지식재산권)</h2>
+      <ol>
+        <li>서비스에 포함된 모든 콘텐츠(게임, 이미지, 음악, 텍스트 등)에 대한 저작권 및 지식재산권은 회사에 귀속됩니다.</li>
+        <li>이용자는 회사의 사전 동의 없이 서비스 내 콘텐츠를 복제, 배포, 수정할 수 없습니다.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>제9조 (면책조항)</h2>
+      <ol>
+        <li>회사는 천재지변, 전쟁, 서비스 장애 등 불가항력적 사유로 인한 서비스 중단에 대해 책임을 지지 않습니다.</li>
+        <li>회사는 이용자의 귀책사유로 인한 서비스 이용 장애에 대해 책임을 지지 않습니다.</li>
+        <li>회사는 이용자가 서비스를 통해 얻은 정보 또는 자료로 인한 손해에 대해 책임을 지지 않습니다.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>제10조 (게임 데이터)</h2>
+      <div class="info-box">
+        <p><span class="zombie-icon">💾</span><strong>게임 데이터 안내</strong></p>
+        <p>게임 데이터는 서비스 내에서만 유효하며, 현금으로 환전되지 않습니다.</p>
+        <p>서비스 종료 시 게임 데이터는 삭제될 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>제11조 (이용 연령)</h2>
+      <div class="info-box">
+        <p><span class="zombie-icon">👤</span><strong>본 서비스는 만 12세 이상 이용 가능합니다.</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>제12조 (분쟁 해결)</h2>
+      <ol>
+        <li>서비스 이용과 관련하여 분쟁이 발생한 경우 회사와 이용자는 원만한 해결을 위해 성실히 협의합니다.</li>
+        <li>협의가 이루어지지 않을 경우 관련 법령에 따라 처리합니다.</li>
+      </ol>
+    </section>
+
+    <section class="contact-info">
+      <h2>제13조 (문의)</h2>
+      <p>서비스 이용에 관한 문의사항은 아래 연락처로 문의하시기 바랍니다.</p>
+      <p><strong>이메일:</strong> <a href="mailto:gosuni2025@gmail.com">gosuni2025@gmail.com</a></p>
+      <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">
+        <strong>고순이</strong><br>
+        시행일: 2025년 12월 4일
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Zombie Defense Team. All rights reserved.</p>
+    <div>
+      <a href="/">홈</a>
+      <a href="/privacy.html">개인정보 처리방침</a>
+      <a href="/terms.html">서비스 이용약관</a>
+    </div>
+  </footer>
+</body>
+
+</html>
