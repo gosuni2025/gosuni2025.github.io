@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CZREXB000"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1CZREXB000');
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>고객지원 - Zombie Defense</title>
+  <meta name="description" content="Zombie Defense 게임 관련 문의 및 고객지원 안내입니다.">
+  <style>
+    :root {
+      --primary-color: #1a1a2e;
+      --accent-color: #e94560;
+      --text-color: #333;
+      --text-light: #666;
+      --bg-color: #ffffff;
+      --border-color: #e0e0e0;
+      --section-bg: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+      line-height: 1.8;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .logo:hover {
+      color: var(--accent-color);
+    }
+
+    .back-link {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      flex: 1;
+    }
+
+    /* Title Section */
+    .title-section {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .title-section h1 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .title-section .game-name {
+      color: var(--accent-color);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .intro-text {
+      margin-top: 1.5rem;
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Contact Card */
+    .contact-card {
+      background: linear-gradient(135deg, var(--primary-color) 0%, #16213e 100%);
+      color: #fff;
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 2rem 0;
+      box-shadow: 0 10px 40px rgba(26, 26, 46, 0.3);
+    }
+
+    .contact-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .contact-card p {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    .email-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--accent-color);
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+    }
+
+    .email-button:hover {
+      background: #c73850;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(233, 69, 96, 0.5);
+      text-decoration: none;
+    }
+
+    .email-icon {
+      font-size: 1.3rem;
+    }
+
+    .email-address {
+      margin-top: 1.5rem;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+    }
+
+    /* Info Section */
+    .info-section {
+      margin-top: 3rem;
+    }
+
+    .info-section h2 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+    }
+
+    .info-box {
+      background: var(--section-bg);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .info-box ul {
+      margin: 0.5rem 0 0 1.5rem;
+      color: var(--text-light);
+    }
+
+    .info-box li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--primary-color);
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem 1rem 3rem;
+      }
+
+      .title-section h1 {
+        font-size: 1.5rem;
+      }
+
+      .contact-card {
+        padding: 2rem 1.5rem;
+      }
+
+      .contact-card h2 {
+        font-size: 1.3rem;
+      }
+
+      .email-button {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      .header,
+      .footer,
+      .back-link {
+        display: none;
+      }
+
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      body {
+        font-size: 12pt;
+        line-height: 1.6;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/" class="logo">Zombie Defense</a>
+      <a href="/" class="back-link">← 홈으로</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="title-section">
+      <p class="game-name">Zombie Defense</p>
+      <h1>고객지원</h1>
+      <p class="intro-text">
+        게임 관련 문의, 버그 신고, 건의사항 등 무엇이든 편하게 연락해주세요.
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <h2>이메일 문의</h2>
+      <p>문의사항이 있으시면 아래 버튼을 클릭하여 이메일을 보내주세요.<br>최대한 빠르게 답변드리겠습니다.</p>
+      <a href="mailto:gosuni2025@gmail.com?subject=[Zombie Defense] 문의" class="email-button">
+        <span class="email-icon">✉️</span>
+        이메일 보내기
+      </a>
+      <p class="email-address">gosuni2025@gmail.com</p>
+    </div>
+
+    <div class="info-section">
+      <h2>문의 시 참고사항</h2>
+      <div class="info-box">
+        <p>원활한 지원을 위해 다음 정보를 포함해주시면 도움이 됩니다:</p>
+        <ul>
+          <li>사용 중인 기기 모델 (예: Galaxy S24, iPhone 15)</li>
+          <li>OS 버전 (예: Android 14, iOS 17)</li>
+          <li>문제 발생 상황에 대한 자세한 설명</li>
+          <li>스크린샷 (가능한 경우)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Zombie Defense Team. All rights reserved.</p>
+    <div>
+      <a href="/">홈</a>
+      <a href="/privacy.html">개인정보 처리방침</a>
+      <a href="/terms.html">서비스 이용약관</a>
+    </div>
+  </footer>
+</body>
+
+</html>
