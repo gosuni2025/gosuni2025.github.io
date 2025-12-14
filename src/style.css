@@ -117,6 +117,13 @@ h1 {
   color: #aaa;
 }
 
+.store-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .btn-badge {
   display: inline-block;
   transition: transform 0.2s;
@@ -127,8 +134,7 @@ h1 {
 }
 
 .badge-img {
-  height: 60px;
-  /* Adjust based on official badge size */
+  height: 50px;
   width: auto;
 }
 
