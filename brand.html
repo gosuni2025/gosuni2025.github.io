@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CZREXB000"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1CZREXB000');
+  </script>
+  <link rel="icon" type="image/png" href="/assets/logo-white-bg.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>브랜드 가이드 - Zombie Defense</title>
+  <meta name="description" content="Zombie Defense 브랜드 가이드라인 및 로고 다운로드">
+  <style>
+    :root {
+      --primary-color: #ff3b3b;
+      --secondary-color: #1a1a1a;
+      --text-color: #e0e0e0;
+      --bg-color: #0a0a0a;
+      --accent-color: #2d2d2d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(10, 10, 10, 0.9);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid var(--accent-color);
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 40px;
+      width: auto;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      list-style: none;
+    }
+
+    nav a {
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    main {
+      padding-top: 80px;
+    }
+
+    .brand-hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--secondary-color);
+    }
+
+    .brand-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .brand-hero p {
+      color: #888;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .brand-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .brand-section h2 {
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .logo-card {
+      border: 1px solid var(--accent-color);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.3s;
+    }
+
+    .logo-card:hover {
+      border-color: var(--primary-color);
+    }
+
+    .logo-preview {
+      padding: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+    }
+
+    .logo-preview.dark-bg {
+      background: #0a0a0a;
+    }
+
+    .logo-preview.light-bg {
+      background: #ffffff;
+    }
+
+    .logo-preview.checker-bg {
+      background-image:
+        linear-gradient(45deg, #ccc 25%, transparent 25%),
+        linear-gradient(-45deg, #ccc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(-45deg, transparent 75%, #ccc 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+      background-color: #fff;
+    }
+
+    .logo-preview img {
+      max-width: 120px;
+      max-height: 120px;
+    }
+
+    .logo-info {
+      background: var(--secondary-color);
+      padding: 1.5rem;
+    }
+
+    .logo-info h3 {
+      font-size: 1rem;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo-info p {
+      font-size: 0.875rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    .btn-download {
+      display: inline-block;
+      background: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .btn-download:hover {
+      background: #d32f2f;
+    }
+
+    .guidelines {
+      background: var(--secondary-color);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .guidelines h3 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .guidelines ul {
+      list-style: none;
+      color: #aaa;
+    }
+
+    .guidelines li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .guidelines li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+    }
+
+    .color-palette {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .color-swatch {
+      text-align: center;
+    }
+
+    .color-box {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      border: 1px solid var(--accent-color);
+    }
+
+    .color-swatch span {
+      font-size: 0.75rem;
+      color: #888;
+      display: block;
+    }
+
+    footer {
+      padding: 2rem;
+      background: black;
+      text-align: center;
+      border-top: 1px solid var(--accent-color);
+      color: #666;
+    }
+
+    .footer-links {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .brand-hero h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">
+        <img src="/assets/logo-transparent-white.png" alt="Zombie Defense" class="logo-img">
+      </a>
+      <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/brand.html">브랜드</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="brand-hero">
+      <h1>브랜드 가이드</h1>
+      <p>Zombie Defense 로고 및 브랜드 에셋을 다운로드하세요. 미디어 및 파트너십 관련 문의는 gosuni2025@gmail.com으로 연락해주세요.</p>
+    </section>
+
+    <section class="brand-section">
+      <h2>로고 다운로드</h2>
+      <div class="logo-grid">
+        <div class="logo-card">
+          <div class="logo-preview light-bg">
+            <img src="/assets/logo-white-bg.png" alt="로고 - 흰색 배경">
+          </div>
+          <div class="logo-info">
+            <h3>흰색 배경</h3>
+            <p>밝은 배경에서 사용하거나, 파비콘으로 활용하세요.</p>
+            <a href="/assets/logo-white-bg.png" download class="btn-download">PNG 다운로드</a>
+          </div>
+        </div>
+
+        <div class="logo-card">
+          <div class="logo-preview dark-bg">
+            <img src="/assets/logo-transparent-white.png" alt="로고 - 투명 배경 (흰색)">
+          </div>
+          <div class="logo-info">
+            <h3>투명 배경 (흰색)</h3>
+            <p>어두운 배경에서 사용하세요.</p>
+            <a href="/assets/logo-transparent-white.png" download class="btn-download">PNG 다운로드</a>
+          </div>
+        </div>
+
+        <div class="logo-card">
+          <div class="logo-preview checker-bg">
+            <img src="/assets/logo-transparent-black.png" alt="로고 - 투명 배경 (검은색)">
+          </div>
+          <div class="logo-info">
+            <h3>투명 배경 (검은색)</h3>
+            <p>밝은 배경에서 사용하세요.</p>
+            <a href="/assets/logo-transparent-black.png" download class="btn-download">PNG 다운로드</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="guidelines">
+        <h3>사용 가이드라인</h3>
+        <ul>
+          <li>로고의 비율을 변경하지 마세요</li>
+          <li>로고 주변에 충분한 여백을 확보하세요</li>
+          <li>배경에 맞는 버전을 사용하세요</li>
+          <li>로고에 효과(그림자, 외곽선 등)를 추가하지 마세요</li>
+          <li>승인되지 않은 상업적 용도로 사용하지 마세요</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="brand-section">
+      <h2>브랜드 컬러</h2>
+      <div class="color-palette">
+        <div class="color-swatch">
+          <div class="color-box" style="background: #ff3b3b;"></div>
+          <span>Primary</span>
+          <span>#FF3B3B</span>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background: #1a1a1a;"></div>
+          <span>Secondary</span>
+          <span>#1A1A1A</span>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background: #0a0a0a;"></div>
+          <span>Background</span>
+          <span>#0A0A0A</span>
+        </div>
+        <div class="color-swatch">
+          <div class="color-box" style="background: #e0e0e0;"></div>
+          <span>Text</span>
+          <span>#E0E0E0</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zombie Defense Team. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/privacy.html">개인정보 처리방침</a>
+      <a href="/terms.html">서비스 이용약관</a>
+      <a href="/support.html">고객지원</a>
+    </div>
+  </footer>
+</body>
+
+</html>
