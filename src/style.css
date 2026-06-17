@@ -59,13 +59,16 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 nav a {
   font-weight: 500;
+  white-space: nowrap;
   transition: color 0.3s;
 }
 
@@ -232,6 +235,7 @@ footer {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -269,5 +273,6 @@ footer {
 
   nav ul {
     gap: 1rem;
+    justify-content: center;
   }
 }
