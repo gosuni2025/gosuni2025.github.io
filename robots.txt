@@ -9,3 +9,5 @@ Disallow:
 
 User-agent: Googlebot
 Disallow:
+
+Sitemap: https://gosuni.com/sitemap.xml
