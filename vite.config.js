@@ -14,6 +14,7 @@ export default defineConfig({
                 zombie: resolve(__dirname, 'zombie-defense.html'),
                 manualRiceSorting: resolve(__dirname, 'manual-rice-sorting.html'),
                 taikyokuBattleline: resolve(__dirname, 'taikyoku-battleline.html'),
+                manifestationRecordWar: resolve(__dirname, 'manifestation-record-war.html'),
             },
         },
     },

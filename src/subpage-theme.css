@@ -403,6 +403,51 @@ body[data-theme="gosuni-doc"] .language-switcher__select {
   color: var(--doc-ink);
 }
 
+@media (max-width: 900px) {
+  body[data-theme="gosuni-doc"] .header,
+  body[data-theme="gosuni-doc"] header {
+    position: static;
+  }
+
+  body[data-theme="gosuni-doc"] .header-content,
+  body[data-theme="gosuni-doc"] nav {
+    width: 100%;
+    max-width: none;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  body[data-theme="gosuni-doc"] .header-links,
+  body[data-theme="gosuni-doc"] nav ul {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  body[data-theme="gosuni-doc"] .header-content .language-switcher,
+  body[data-theme="gosuni-doc"] nav .language-switcher {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+
+  body[data-theme="gosuni-doc"] .language-switcher__select {
+    max-width: 100%;
+  }
+
+  body[data-theme="gosuni-doc"] main {
+    padding-top: 0;
+  }
+
+  body[data-theme="gosuni-doc"] .container {
+    padding: 3rem 1.5rem 4rem;
+  }
+}
+
 @media (max-width: 760px) {
   body[data-theme="gosuni-doc"] .header-content,
   body[data-theme="gosuni-doc"] nav {
@@ -430,11 +475,11 @@ body[data-theme="gosuni-doc"] .language-switcher__select {
   }
 
   body[data-theme="gosuni-doc"] main {
-    padding-top: 9.5rem;
+    padding-top: 0;
   }
 
   body[data-theme="gosuni-doc"] .container {
-    padding: calc(9.5rem + 2rem) 1rem 3rem;
+    padding: 2rem 1rem 3rem;
   }
 
   body[data-theme="gosuni-doc"] .title-section,
