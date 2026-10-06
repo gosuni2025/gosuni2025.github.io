@@ -213,10 +213,10 @@ h1 {
 
 .hub-showcase {
   position: relative;
-  min-height: 560px;
+  min-height: 720px;
   display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr)) 150px;
   gap: 1rem;
 }
 
@@ -266,6 +266,13 @@ h1 {
   border-color: rgba(255, 59, 59, 0.28);
 }
 
+.showcase-tile--solitaire {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  border-color: rgba(214, 184, 110, 0.42);
+  background: #0a1711;
+}
+
 .showcase-tile img {
   position: absolute;
   inset: 0;
@@ -290,6 +297,10 @@ h1 {
 
 .showcase-tile--record img {
   object-position: 76% center;
+}
+
+.showcase-tile--solitaire img {
+  object-position: center 58%;
 }
 
 .showcase-tile::after {
@@ -323,6 +334,10 @@ h1 {
   color: var(--rice-color);
 }
 
+.showcase-tile--solitaire .showcase-tile__meta {
+  color: #e2c983;
+}
+
 .showcase-tile__title {
   color: #fff;
   font-size: clamp(1.65rem, 3vw, 2.45rem);
@@ -345,7 +360,7 @@ h1 {
   position: absolute;
   left: 50%;
   top: 0;
-  bottom: 0;
+  bottom: calc(150px + 1rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -574,6 +589,84 @@ h1 {
 
 .taikyoku-hero .game-hero__layout {
   grid-template-columns: minmax(0, 0.85fr) minmax(300px, 0.6fr);
+}
+
+.solitaire-hero {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(46, 125, 88, 0.26), transparent 36%),
+    radial-gradient(circle at 78% 52%, rgba(214, 184, 110, 0.16), transparent 40%),
+    linear-gradient(180deg, rgba(7, 20, 15, 0.98), rgba(5, 10, 8, 0.98));
+}
+
+.solitaire-hero .game-hero__layout {
+  grid-template-columns: minmax(0, 0.8fr) minmax(420px, 1fr);
+}
+
+.solitaire-title {
+  margin: 0 0 0.6rem;
+  line-height: 0;
+}
+
+.solitaire-title img {
+  width: min(420px, 100%);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.5));
+}
+
+.solitaire-hero .solitaire-tagline {
+  color: #e2c983;
+  font-weight: 800;
+}
+
+.solitaire-hero .game-hero__media {
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  border-color: rgba(214, 184, 110, 0.4);
+  background: #06100c;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.game-hero__media--solitaire img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.screenshot-section--solitaire {
+  background:
+    linear-gradient(180deg, rgba(46, 125, 88, 0.08), transparent 24%),
+    #0b100d;
+}
+
+.solitaire-gallery {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 1.25rem;
+}
+
+.solitaire-gallery figure {
+  margin: 0;
+}
+
+.solitaire-gallery img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  border: 1px solid rgba(214, 184, 110, 0.32);
+  border-radius: 8px;
+  background: #06100c;
+}
+
+.solitaire-gallery figcaption {
+  padding-top: 0.6rem;
+  color: #b9bbb4;
+  font-size: 0.92rem;
 }
 
 .manifestation-hero {
@@ -1115,7 +1208,8 @@ h2 {
   border-left: 2px solid rgba(239, 217, 145, 0.46);
 }
 
-.release-entry time {
+.release-entry time,
+.release-entry__when {
   display: block;
   color: var(--rice-color);
   font-size: clamp(1.25rem, 2.6vw, 1.8rem);
@@ -1190,6 +1284,14 @@ h2 {
   color: #ff7777;
 }
 
+.store-chip--itch {
+  color: #e2c983;
+}
+
+.store-chip--detail {
+  color: #8fd3ad;
+}
+
 .store-chip:hover {
   border-color: currentColor;
   background: rgba(245, 241, 232, 0.06);
@@ -1211,6 +1313,20 @@ h2 {
 
 .release-entry--latest .release-entry__sequence {
   color: #66ddd6;
+}
+
+.release-entry--upcoming .release-entry__marker {
+  background: #090a09;
+  box-shadow: 0 0 0 1px rgba(226, 201, 131, 0.9);
+}
+
+.release-entry--upcoming .release-entry__record {
+  border-top-style: dashed;
+  background: linear-gradient(110deg, rgba(46, 125, 88, 0.14), transparent 72%);
+}
+
+.release-entry--upcoming .release-entry__when {
+  color: #e2c983;
 }
 
 /* Browser play lab */
@@ -1458,6 +1574,12 @@ h2 {
     #0b1111;
 }
 
+.detail-notes--solitaire {
+  background:
+    linear-gradient(135deg, rgba(46, 125, 88, 0.12), transparent 42%),
+    #0a0f0c;
+}
+
 .detail-notes--manifestation {
   background:
     linear-gradient(135deg, rgba(100, 40, 59, 0.26), transparent 40%),
@@ -1637,7 +1759,7 @@ footer {
   }
 
   .hub-showcase {
-    min-height: 520px;
+    min-height: 680px;
   }
 
   .manifestation-hero__layout {
@@ -1724,7 +1846,8 @@ footer {
   .showcase-tile--record,
   .showcase-tile--manual,
   .showcase-tile--taikyoku,
-  .showcase-tile--zombie {
+  .showcase-tile--zombie,
+  .showcase-tile--solitaire {
     grid-column: auto;
     grid-row: auto;
     min-height: 320px;
@@ -1752,6 +1875,22 @@ footer {
   }
 
   .taikyoku-hero .game-hero__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .solitaire-hero .game-hero__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .solitaire-title img {
+    margin-inline: auto;
+  }
+
+  .solitaire-hero .game-hero__media {
+    min-height: 0;
+  }
+
+  .solitaire-gallery {
     grid-template-columns: 1fr;
   }
 

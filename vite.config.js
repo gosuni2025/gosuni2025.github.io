@@ -15,6 +15,7 @@ export default defineConfig({
                 manualRiceSorting: resolve(__dirname, 'manual-rice-sorting.html'),
                 taikyokuBattleline: resolve(__dirname, 'taikyoku-battleline.html'),
                 manifestationRecordWar: resolve(__dirname, 'manifestation-record-war.html'),
+                solitaireMasquerade: resolve(__dirname, 'solitaire-masquerade.html'),
             },
         },
     },
