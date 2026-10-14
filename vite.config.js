@@ -16,6 +16,7 @@ export default defineConfig({
                 taikyokuBattleline: resolve(__dirname, 'taikyoku-battleline.html'),
                 manifestationRecordWar: resolve(__dirname, 'manifestation-record-war.html'),
                 solitaireMasquerade: resolve(__dirname, 'solitaire-masquerade.html'),
+                neonLogic: resolve(__dirname, 'neon-logic.html'),
             },
         },
     },

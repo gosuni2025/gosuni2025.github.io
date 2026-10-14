@@ -267,7 +267,7 @@ h1 {
 }
 
 .showcase-tile--solitaire {
-  grid-column: 1 / -1;
+  grid-column: 1;
   grid-row: 3;
   border-color: rgba(214, 184, 110, 0.42);
   background: #0a1711;
@@ -301,6 +301,17 @@ h1 {
 
 .showcase-tile--solitaire img {
   object-position: center 58%;
+}
+
+.showcase-tile--neon {
+  grid-column: 2;
+  grid-row: 3;
+  border-color: rgba(255, 79, 190, 0.42);
+  background: #0b0a16;
+}
+
+.showcase-tile--neon img {
+  object-position: center 40%;
 }
 
 .showcase-tile::after {
@@ -338,11 +349,21 @@ h1 {
   color: #e2c983;
 }
 
+.showcase-tile--neon .showcase-tile__meta {
+  color: #5de5f5;
+}
+
 .showcase-tile__title {
   color: #fff;
   font-size: clamp(1.65rem, 3vw, 2.45rem);
   font-weight: 900;
   line-height: 1;
+}
+
+.showcase-tile--solitaire .showcase-tile__title,
+.showcase-tile--neon .showcase-tile__title {
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  line-height: 1.05;
 }
 
 .showcase-tile--taikyoku .showcase-tile__title {
@@ -667,6 +688,61 @@ h1 {
   padding-top: 0.6rem;
   color: #b9bbb4;
   font-size: 0.92rem;
+}
+
+.neon-hero {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255, 51, 170, 0.2), transparent 36%),
+    radial-gradient(circle at 78% 52%, rgba(40, 200, 235, 0.16), transparent 40%),
+    linear-gradient(180deg, rgba(10, 8, 24, 0.98), rgba(5, 6, 14, 0.98));
+}
+
+.neon-hero .game-hero__layout {
+  grid-template-columns: minmax(0, 0.8fr) minmax(420px, 1fr);
+}
+
+.neon-title {
+  margin: 0 0 0.6rem;
+  line-height: 0;
+}
+
+.neon-title img {
+  width: min(420px, 100%);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.5));
+}
+
+.neon-hero .neon-tagline {
+  color: #5de5f5;
+  font-weight: 800;
+}
+
+.neon-hero .game-hero__media {
+  min-height: 0;
+  aspect-ratio: 1600 / 736;
+  border-color: rgba(255, 79, 190, 0.42);
+  background: #06060f;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.game-hero__media--neon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.screenshot-section--neon {
+  background:
+    linear-gradient(180deg, rgba(255, 51, 170, 0.07), transparent 24%),
+    #0a0a12;
+}
+
+.neon-gallery img {
+  aspect-ratio: 1600 / 736;
+  border-color: rgba(93, 229, 245, 0.3);
+  background: #06060f;
 }
 
 .manifestation-hero {
@@ -1580,6 +1656,12 @@ h2 {
     #0a0f0c;
 }
 
+.detail-notes--neon {
+  background:
+    linear-gradient(135deg, rgba(255, 51, 170, 0.1), transparent 42%),
+    #09090f;
+}
+
 .detail-notes--manifestation {
   background:
     linear-gradient(135deg, rgba(100, 40, 59, 0.26), transparent 40%),
@@ -1847,11 +1929,17 @@ footer {
   .showcase-tile--manual,
   .showcase-tile--taikyoku,
   .showcase-tile--zombie,
-  .showcase-tile--solitaire {
+  .showcase-tile--solitaire,
+  .showcase-tile--neon {
     grid-column: auto;
     grid-row: auto;
     min-height: 320px;
     margin: 0;
+  }
+
+  .showcase-tile--solitaire .showcase-tile__title,
+  .showcase-tile--neon .showcase-tile__title {
+    font-size: clamp(1.65rem, 3vw, 2.45rem);
   }
 
   .showcase-rule {
@@ -1880,6 +1968,18 @@ footer {
 
   .solitaire-hero .game-hero__layout {
     grid-template-columns: 1fr;
+  }
+
+  .neon-hero .game-hero__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .neon-title img {
+    margin-inline: auto;
+  }
+
+  .neon-hero .game-hero__media {
+    min-height: 0;
   }
 
   .solitaire-title img {
