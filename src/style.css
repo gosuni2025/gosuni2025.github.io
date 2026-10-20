@@ -213,10 +213,10 @@ h1 {
 
 .hub-showcase {
   position: relative;
-  min-height: 886px;
+  min-height: 1052px;
   display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
-  grid-template-rows: repeat(2, minmax(0, 1fr)) 150px 150px;
+  grid-template-rows: repeat(2, minmax(0, 1fr)) 150px 150px 150px;
   gap: 1rem;
 }
 
@@ -325,6 +325,17 @@ h1 {
   object-position: center 45%;
 }
 
+.showcase-tile--idolchain {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  border-color: rgba(255, 128, 214, 0.46);
+  background: #12081f;
+}
+
+.showcase-tile--idolchain img {
+  object-position: center 40%;
+}
+
 .showcase-tile::after {
   content: "";
   position: absolute;
@@ -368,6 +379,10 @@ h1 {
   color: #7fe0c2;
 }
 
+.showcase-tile--idolchain .showcase-tile__meta {
+  color: #ff9ee0;
+}
+
 .showcase-tile__title {
   color: #fff;
   font-size: clamp(1.65rem, 3vw, 2.45rem);
@@ -377,7 +392,8 @@ h1 {
 
 .showcase-tile--solitaire .showcase-tile__title,
 .showcase-tile--neon .showcase-tile__title,
-.showcase-tile--orbbound .showcase-tile__title {
+.showcase-tile--orbbound .showcase-tile__title,
+.showcase-tile--idolchain .showcase-tile__title {
   font-size: clamp(1.3rem, 2.2vw, 1.8rem);
   line-height: 1.05;
 }
@@ -397,7 +413,7 @@ h1 {
   position: absolute;
   left: 50%;
   top: 0;
-  bottom: calc(300px + 2rem);
+  bottom: calc(450px + 3rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -813,6 +829,61 @@ h1 {
 }
 
 .orbbound-gallery figure:last-child {
+  grid-column: 1 / -1;
+}
+
+.idolchain-hero {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255, 80, 190, 0.22), transparent 36%),
+    radial-gradient(circle at 78% 52%, rgba(110, 90, 255, 0.2), transparent 40%),
+    linear-gradient(180deg, rgba(18, 8, 34, 0.98), rgba(8, 5, 18, 0.98));
+}
+
+.idolchain-hero .game-hero__layout {
+  grid-template-columns: minmax(0, 0.8fr) minmax(420px, 1fr);
+}
+
+.idolchain-title {
+  margin: 0 0 0.6rem;
+  color: #ffe3f6;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  text-shadow: 0 0 26px rgba(255, 90, 200, 0.45), 0 10px 28px rgba(0, 0, 0, 0.5);
+}
+
+.idolchain-hero .idolchain-tagline {
+  color: #ff9ee0;
+  font-weight: 800;
+}
+
+.idolchain-hero .game-hero__media {
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  border-color: rgba(255, 128, 214, 0.46);
+  background: #12081f;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.game-hero__media--idolchain img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.screenshot-section--idolchain {
+  background:
+    linear-gradient(180deg, rgba(255, 80, 190, 0.08), transparent 24%),
+    #0d0718;
+}
+
+.idolchain-gallery img {
+  border-color: rgba(255, 158, 224, 0.3);
+}
+
+.idolchain-gallery figure:last-child {
   grid-column: 1 / -1;
 }
 
@@ -1525,6 +1596,12 @@ h2 {
     #09110e;
 }
 
+.detail-notes--idolchain {
+  background:
+    linear-gradient(135deg, rgba(255, 80, 190, 0.1), transparent 42%),
+    #0d0718;
+}
+
 .detail-notes--manifestation {
   background:
     linear-gradient(135deg, rgba(100, 40, 59, 0.26), transparent 40%),
@@ -1704,7 +1781,7 @@ footer {
   }
 
   .hub-showcase {
-    min-height: 680px;
+    min-height: 846px;
   }
 
   .manifestation-hero__layout {
@@ -1778,7 +1855,8 @@ footer {
   .showcase-tile--zombie,
   .showcase-tile--solitaire,
   .showcase-tile--neon,
-  .showcase-tile--orbbound {
+  .showcase-tile--orbbound,
+  .showcase-tile--idolchain {
     grid-column: auto;
     grid-row: auto;
     min-height: 320px;
@@ -1787,7 +1865,8 @@ footer {
 
   .showcase-tile--solitaire .showcase-tile__title,
   .showcase-tile--neon .showcase-tile__title,
-  .showcase-tile--orbbound .showcase-tile__title {
+  .showcase-tile--orbbound .showcase-tile__title,
+  .showcase-tile--idolchain .showcase-tile__title {
     font-size: clamp(1.65rem, 3vw, 2.45rem);
   }
 
@@ -1831,11 +1910,13 @@ footer {
     min-height: 0;
   }
 
-  .orbbound-hero .game-hero__layout {
+  .orbbound-hero .game-hero__layout,
+  .idolchain-hero .game-hero__layout {
     grid-template-columns: 1fr;
   }
 
-  .orbbound-hero .game-hero__media {
+  .orbbound-hero .game-hero__media,
+  .idolchain-hero .game-hero__media {
     min-height: 0;
   }
 

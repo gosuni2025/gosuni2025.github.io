@@ -1,4 +1,5 @@
 import { ORBBOUND_TEXT, ORBBOUND_PRIVACY_SUMMARY } from './orbbound-text.js';
+import { IDOL_CHAIN_LIVE_TEXT, IDOL_CHAIN_LIVE_PRIVACY_SUMMARY } from './idol-chain-live-text.js';
 
 const LANGUAGE_STORAGE_KEY = 'gosuni2025.language';
 
@@ -1769,6 +1770,10 @@ Object.entries(ORBBOUND_TEXT).forEach(([language, entries]) => {
   Object.assign(PAGE_TEXT[language], entries);
 });
 
+Object.entries(IDOL_CHAIN_LIVE_TEXT).forEach(([language, entries]) => {
+  Object.assign(PAGE_TEXT[language], entries);
+});
+
 Object.entries(PAGE_TEXT).forEach(([language, entries]) => {
   Object.assign(TEXT[language], entries);
 });
@@ -2292,6 +2297,13 @@ Object.entries(NEON_LOGIC_PRIVACY_SUMMARY).forEach(([language, section]) => {
   }
 });
 Object.entries(ORBBOUND_PRIVACY_SUMMARY).forEach(([language, section]) => {
+  const sections = LEGAL_SUMMARIES.privacy[language]?.sections;
+  if (sections) {
+    const contactIndex = sections.findIndex((item) => item.className === 'contact-info');
+    sections.splice(contactIndex === -1 ? sections.length : contactIndex, 0, section);
+  }
+});
+Object.entries(IDOL_CHAIN_LIVE_PRIVACY_SUMMARY).forEach(([language, section]) => {
   const sections = LEGAL_SUMMARIES.privacy[language]?.sections;
   if (sections) {
     const contactIndex = sections.findIndex((item) => item.className === 'contact-info');
