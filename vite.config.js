@@ -17,6 +17,7 @@ export default defineConfig({
                 manifestationRecordWar: resolve(__dirname, 'manifestation-record-war.html'),
                 solitaireMasquerade: resolve(__dirname, 'solitaire-masquerade.html'),
                 neonLogic: resolve(__dirname, 'neon-logic.html'),
+                orbbound: resolve(__dirname, 'orbbound.html'),
             },
         },
     },

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gosuni.com/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://gosuni.com/taikyoku-battleline.html</loc>
@@ -14,11 +14,15 @@
   </url>
   <url>
     <loc>https://gosuni.com/solitaire-masquerade.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://gosuni.com/neon-logic.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://gosuni.com/orbbound.html</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://gosuni.com/manual-rice-sorting.html</loc>
@@ -34,7 +38,7 @@
   </url>
   <url>
     <loc>https://gosuni.com/privacy.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://gosuni.com/terms.html</loc>
