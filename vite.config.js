@@ -19,6 +19,8 @@ export default defineConfig({
                 neonLogic: resolve(__dirname, 'neon-logic.html'),
                 orbbound: resolve(__dirname, 'orbbound.html'),
                 idolChainLive: resolve(__dirname, 'idol-chain-live.html'),
+                hallOfGlory: resolve(__dirname, 'hall-of-glory.html'),
+                hallOfGloryPrivacy: resolve(__dirname, 'hall-of-glory-privacy.html'),
             },
         },
     },
