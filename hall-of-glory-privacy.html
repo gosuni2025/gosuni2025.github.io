@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hall of Glory 개인정보처리방침 — Gosuni2025</title>
-  <meta name="description" content="Hall of Glory의 로컬 게임 저장, PvP 온라인 인증, 계정 영구 삭제와 이전 자료·백업의 처리 범위를 설명합니다. 공개 웹 테스트에 적용되는 안내입니다." />
+  <meta name="description" content="Hall of Glory 공개 웹 테스트의 로컬 게임 저장, PvP 온라인 인증, 계정 영구 삭제와 이전 서버 자료·백업의 처리 범위를 설명합니다." />
   <link rel="canonical" href="https://gosuni.com/hall-of-glory-privacy.html" />
   <link rel="icon" type="image/png" href="/assets/logo-white-bg.png" />
   <link rel="stylesheet" href="/src/subpage-theme.css" />
@@ -26,24 +26,24 @@
       <p class="hg-lead">기기에 저장하는 모험과<br />온라인 계정을 구분합니다.</p>
       <p>시행일: 2026년 10월 22일 · 운영자: 고순이2025(Gosuni2025)</p>
     </div>
-    <aside class="hg-draft" aria-label="적용 버전"><strong>공개 웹 테스트 기준</strong><p>현재 웹은 서버 저장 방식입니다. 기기 저장·PvP 분리 버전은 개발 중이며 관련 설명을 구분했습니다. 온라인 계정 삭제는 앱 설치 없이 <a href="https://glory.gosuni.com/account.html">웹 계정 관리</a>에서 본인 확인 후 이용할 수 있습니다.</p></aside>
+    <aside class="hg-draft" aria-label="적용 버전"><strong>공개 웹 테스트 기준</strong><p>현재 공개 웹은 기본 게임을 기기에 저장하고 PvP만 서버에 연결합니다. 이전 온라인 게임 계정과 서버 자료도 아래 삭제 절차의 대상입니다. 온라인 계정 삭제는 앱 설치 없이 <a href="https://glory.gosuni.com/account.html">웹 계정 관리</a>에서 본인 확인 후 이용할 수 있습니다.</p></aside>
     <nav class="hg-policy-toc" aria-label="문서 목차">
       <a href="#scope">적용 버전</a><a href="#information">처리 정보</a><a href="#authentication">로그인</a><a href="#providers">외부 서비스</a><a href="#storage">기기 저장</a><a href="#deletion">계정 삭제</a><a href="#retention">남는 기록·백업</a><a href="#requests">권리·문의</a>
     </nav>
     <section id="scope">
       <h2>1. 적용 범위와 버전</h2>
-      <p>현재 공개 웹 테스트는 온라인 계정과 모험단·동료·장비·재화·진행·전투·랭킹·게시·거래 기록을 서버에 저장합니다. 본인 확인, 게임 제공·저장·복구, 요청 중복 처리와 보안에 사용합니다.</p>
-      <p>개발 중인 기기 저장 버전은 기본 모험·성장·장비·기록을 로그인 없이 기기에 저장하고 PvP에서만 서버에 연결하는 방식입니다. 아래 기기 저장·PvP 전송 설명은 이 개발 버전 기준입니다. 기존 서버 진행의 자동 이전이나 기기 간 동기화는 제공하지 않습니다.</p>
-      <p>현재 Hall of Glory 클라이언트에는 광고 SDK, Firebase Analytics 또는 Gosuni2025 플레이 통계 전송 기능을 넣지 않았습니다. 이 전용 소개·개인정보 페이지에도 광고·분석 스크립트를 넣지 않았습니다. 다른 서비스의 기능은 <a href="/privacy.html">Gosuni2025 공통 개인정보 처리방침</a>을 확인해 주세요.</p>
+      <p>현재 공개 웹 테스트는 기본 모험·성장·장비·기록을 로그인 없이 기기에 저장하고 PvP에서 서버에 연결합니다. 서버는 온라인 계정·참가 구성·랭킹·전투 결과를 본인 확인, PvP 제공과 보안에 사용합니다.</p>
+      <p>이전 온라인 게임의 서버 모험단·동료·장비·재화·진행·전투·게시·거래·재시도 기록은 별도로 남아 있을 수 있으며, 소유권 확인 후 계정 삭제 절차로 처리합니다. 이전 서버 진행의 자동 이전이나 기기 간 동기화는 제공하지 않습니다. 모바일 앱의 스토어 출시는 준비 중입니다.</p>
+      <p>Hall of Glory 소스에는 광고 SDK나 Firebase Analytics를 추가하지 않았습니다. 다만 공개 게임 호스팅에서 Cloudflare 경량 웹 분석 스크립트가 자동 주입되는 것을 관측했습니다. 호스팅 분석은 아래 외부 서비스 안내를 확인해 주세요. 이 전용 소개·개인정보 페이지 소스에도 광고·분석 스크립트를 추가하지 않았습니다. 다른 서비스의 기능은 <a href="/privacy.html">Gosuni2025 공통 개인정보 처리방침</a>을 확인해 주세요.</p>
     </section>
     <section id="information">
       <h2>2. 처리하는 정보와 목적</h2>
       <div class="hg-table-wrap"><table>
-        <caption>서버 계정과 개발 중인 기기 저장 버전의 구분</caption>
+        <caption>기기 저장과 온라인 계정의 처리 구분</caption>
         <thead><tr><th scope="col">정보</th><th scope="col">처리 위치와 목적</th></tr></thead>
         <tbody>
-          <tr><th scope="row">기본 게임 진행</th><td>개발 중인 기기 저장 버전에서는 모험단·동료 이름, 능력치·장비·스킬·아이템·재화, 진행·전투 기록과 로컬 모험 일지를 기기에서 처리합니다. 기본 플레이를 위해 이 저장 전체를 게임 서버에 업로드하지 않습니다.</td></tr>
-          <tr><th scope="row">PvP 참가 정보</th><td>개발 중인 기기 저장 버전에서 PvP를 선택하면 모험단 이름과 참가 동료의 식별자·이름·직업·성별·성장 수치·능력치·장비·스킬·행동 설정, 게임 규칙 버전을 서버에 보냅니다. 서버는 구성을 검증하고 PvP 파티·랭킹·전투 결과와 재시도 기록을 저장합니다. 로컬 재화·소지품 전체나 로컬 저장 전체를 보내는 방식은 아닙니다.</td></tr>
+          <tr><th scope="row">기본 게임 진행</th><td>기본 게임에서는 모험단·동료 이름, 능력치·장비·스킬·아이템·재화, 진행·전투 기록과 로컬 모험 일지를 기기에서 처리합니다. 기본 플레이를 위해 이 저장 전체를 게임 서버에 업로드하지 않습니다.</td></tr>
+          <tr><th scope="row">PvP 참가 정보</th><td>PvP를 선택하면 모험단 이름과 참가 동료의 식별자·이름·직업·성별·성장 수치·능력치·장비·스킬·행동 설정, 게임 규칙 버전을 서버에 보냅니다. 서버는 구성을 검증하고 PvP 파티·랭킹·전투 결과와 재시도 기록을 저장합니다. 로컬 재화·소지품 전체나 로컬 저장 전체를 보내는 방식은 아닙니다.</td></tr>
           <tr><th scope="row">인증 계정·연결</th><td>Firebase와 선택한 Google·Apple 제공자가 계정 식별자, 이메일·이름 등 프로필과 인증 정보를 처리합니다. 게임 서버는 검증한 Firebase 프로젝트·사용자 식별자(UID)와 온라인 게임 계정의 연결 정보를 저장합니다. 이 식별 정보는 익명 정보가 아닙니다.</td></tr>
           <tr><th scope="row">로그인 상태</th><td>Firebase ID 토큰을 서버 검증에 사용하고 별도의 게임 세션을 발급합니다. 서버는 서명·유효성·사용자 상태와 인증 시각을 확인합니다. 게임 세션과 필요한 검증 정보는 로그인 보호에 사용합니다.</td></tr>
           <tr><th scope="row">이전 서버 자료</th><td>기존 게임 ID·비밀번호 검증값, 서버 모험단·동료·재화·소지품·진행·설정, 전투·랭킹·거래·게시 자료와 재시도 기록이 있을 수 있습니다. 기존 계정 로그인·연결·복구·삭제 시 소유권을 확인합니다.</td></tr>
@@ -61,19 +61,19 @@
     </section>
     <section id="providers">
       <h2>4. 외부 서비스</h2>
-      <p>인증과 웹·네트워크 제공에 아래 서비스를 사용합니다. 선택한 제공자의 계정·로그인 정보와 호스팅 과정의 접속 정보에는 해당 서비스의 정책도 적용됩니다. 아래 목록은 광고·이용 분석 SDK 사용을 뜻하지 않습니다.</p>
+      <p>인증과 웹·네트워크 제공에 아래 서비스를 사용합니다. 선택한 제공자의 계정·로그인 정보와 호스팅 과정의 접속 정보에는 해당 서비스의 정책도 적용됩니다. 게임 내 광고·Firebase Analytics와 호스팅의 웹 분석을 구분합니다.</p>
       <ul class="hg-provider-list">
         <li><strong>Google / Firebase Authentication</strong><span>이메일·소셜 인증, 계정 식별과 인증 토큰 발급·검증. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase 개인정보 안내</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a></span></li>
         <li><strong>Apple</strong><span>Apple 로그인 인증과 연결 철회. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 개인정보처리방침</a></span></li>
-        <li><strong>Cloudflare</strong><span>공개 게임 웹과 API 요청의 호스팅·중계·네트워크 보안. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare 개인정보처리방침</a></span></li>
+        <li><strong>Cloudflare</strong><span>공개 게임 웹과 API 요청의 호스팅·중계·네트워크 보안. 공개 호스팅에서 경량 웹 분석 스크립트 자동 주입이 관측되었습니다. 적용 범위와 정보 처리는 <a href="https://developers.cloudflare.com/web-analytics/" target="_blank" rel="noopener noreferrer">Cloudflare Web Analytics 공식 안내</a>와 <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare 개인정보처리방침</a></span></li>
         <li><strong>GitHub Pages</strong><span>gosuni.com의 소개·정책 페이지 호스팅. 온라인 게임 계정 저장소와는 별개입니다. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub 개인정보 안내</a></span></li>
       </ul>
       <p>외부 인증·호스팅 제공자는 여러 국가의 기반 시설에서 정보를 처리할 수 있습니다. 서비스별 처리 범위는 위 개인정보처리방침을 함께 확인해 주세요. 특정 국가에만 저장되거나 국외 처리가 없다고 보장하지 않습니다.</p>
     </section>
     <section id="storage">
       <h2>5. 기기 저장과 로컬 진행 초기화</h2>
-      <p>개발 중인 기기 저장 버전은 IndexedDB에 기본 게임 진행을 저장합니다. 앱에서도 해당 기기의 저장 공간을 사용합니다. 음량 등 기기 설정과 삭제 진행 상태를 다시 조회할 무작위 티켓은 별도 기기 저장소에 남을 수 있습니다. 삭제 티켓은 계정·비밀번호·인증 토큰을 저장하는 용도가 아니며, 다른 사람에게 공유하지 마세요.</p>
-      <p>개발 중인 버전의 <strong>로컬 게임 → 이 기기의 로컬 진행 초기화</strong>는 기기에 저장한 모험단·동료·재화·기록을 지우는 동작입니다. 온라인 PvP 계정과 Firebase 계정은 유지됩니다. 반대로 온라인 계정을 삭제해도 로컬 진행은 자동으로 지우지 않습니다. 브라우저의 사이트 데이터 삭제나 앱 데이터 삭제·제거 또한 서버 계정 삭제 요청을 대신하지 않습니다.</p>
+      <p>공개 웹의 기본 게임은 IndexedDB에 기본 게임 진행을 저장합니다. 앱에서도 해당 기기의 저장 공간을 사용합니다. 음량 등 기기 설정과 삭제 진행 상태를 다시 조회할 무작위 티켓은 별도 기기 저장소에 남을 수 있습니다. 삭제 티켓은 계정·비밀번호·인증 토큰을 저장하는 용도가 아니며, 다른 사람에게 공유하지 마세요.</p>
+      <p>공개 웹의 <strong>로컬 게임 → 이 기기의 로컬 진행 초기화</strong>는 기기에 저장한 모험단·동료·재화·기록을 지우는 동작입니다. 온라인 PvP 계정과 Firebase 계정은 유지됩니다. 반대로 온라인 계정을 삭제해도 로컬 진행은 자동으로 지우지 않습니다. 브라우저의 사이트 데이터 삭제나 앱 데이터 삭제·제거 또한 서버 계정 삭제 요청을 대신하지 않습니다.</p>
       <p>웹 온라인 세션에는 쿠키를 사용하며, 앱의 게임 세션은 메모리에서 관리합니다. Firebase 웹 인증은 메모리에 두도록 설정하고 네이티브 소셜 인증 SDK 상태도 인증 작업 뒤 정리합니다. 영구 삭제에서는 본인 확인부터 클라우드 삭제까지 필요한 동안만 삭제 전용 인증을 유지한 뒤 정리합니다. 제공자 앱·브라우저 자체의 로그인 상태는 해당 제공자가 관리합니다.</p>
     </section>
     <section id="deletion">
@@ -102,7 +102,7 @@
     <section>
       <h2>9. 변경 안내</h2>
       <p>이 방침은 공개 웹 테스트에 적용됩니다. 기능·배포 버전·외부 서비스나 보관 기준이 바뀌면 이 페이지에서 변경 내용을 안내합니다. 모바일 정식 출시와 해당 심사 완료를 뜻하지 않습니다.</p>
-      <p lang="en">Hall of Glory currently offers a server-based public web test. Local game saves with online PvP are in development. You can permanently delete your online game account and its Firebase identity through the web account management page without installing the app. Google and Apple accounts themselves are not deleted. Minimal deletion reservations and restricted older backups may remain as described above.</p>
+      <p lang="en">Hall of Glory currently offers a public web test with local game saves and server-based PvP. Mobile store releases are in preparation. Earlier online game accounts and server data remain subject to the account deletion process. You can permanently delete your online game account and its Firebase identity through the web account management page without installing the app. Google and Apple accounts themselves are not deleted. Minimal deletion reservations and restricted older backups may remain as described above.</p>
     </section>
   </main>
   <footer><p><strong>Gosuni2025 · 고순이2025</strong></p><p class="footer-business">대표 안시현 · 사업자등록번호 302-23-63588 · 통신판매업신고 2026-서울강남-03707</p><div class="footer-links"><a href="/hall-of-glory.html">Hall of Glory 소개</a><a href="/support.html">고객센터</a><a href="/terms.html">이용약관</a><a href="/privacy.html">다른 서비스의 공통 정책</a></div><p><a href="mailto:contact@gosuni.com">contact@gosuni.com</a></p></footer>
